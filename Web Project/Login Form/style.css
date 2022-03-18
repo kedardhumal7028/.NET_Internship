@@ -1,0 +1,205 @@
+@import url();
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root
+{
+    --primary-color:#352503;
+    --white-color:#fff;
+    --black-color:#3c4a57;
+    --light-gray:#e4e8ee;
+}
+
+body
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.wrapper
+{
+    height: 1%;
+    width: 100%;
+    margin: auto;
+    padding-left: 50%;
+    padding-top: 0%;
+    padding-bottom: 11%;
+    
+}
+
+.wrapper::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:url(./media/login\ background\ img2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    z-index: -1;
+}
+
+
+
+.wrapper .headline
+{
+    color: red;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.wrapper .headline h1
+{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1px;
+    
+}
+
+.wrapper .form
+{
+    max-width: 350px;
+    width: 100%;
+    margin: auto;
+}
+
+.wrapper .form-group input
+{
+    display: block;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    padding: 8px 15px;
+    height: 40px;
+    border-radius: 10px;
+    color: var(--black-color);
+    border: 1px solid #e4e8ee;
+    box-shadow: none;
+    width: 100%;
+    margin: 5px;
+}
+
+.wrapper .form-group input:focus
+{
+    outline: none;
+
+}
+
+.wrapper .form-group input::placeholder
+{
+    color: var(--black-color);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.wrapper .btn
+{
+    width: 100%;
+    margin: 15px 0 30px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+    padding: 12px 29px;
+    height: 48px;
+
+    color: var(--white-color);
+    background-color: blue;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+}
+.wrapper .btn:focus
+{
+    outline: none;
+}
+
+
+.wrapper .account-exist
+{
+    color:black;
+    border-top: 2px solid red;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.wrapper .account-exist a
+{
+    color:rgb(0, 4, 251);
+    font-size: 18px;
+}
+
+.wrapper .forget-password
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.wrapper .forget-password a
+{
+    color: var(--primary-color);
+}
+
+.wrapper .forget-password .check-box
+{
+    font-size: 15px;
+    color: var(--black-color);
+}
+
+#checkbox
+{
+    margin-left: 10px;
+}
+
+.signup.inActive
+{
+    display: none;
+}
+
+.signin
+{
+    display: none;
+    
+}
+
+.signin.active
+{
+    display: block;
+}
+
+@media (max-width:1030px)
+{
+    .wrapper::before
+    {
+        left: -25%;
+        min-height: 60vh;
+        height: 500px;
+    }
+}
+
+@media (max-width:767px)
+{
+    .wrapper
+    {
+        max-width: 550px;
+    }
+    .wrapper .headline h1
+    {
+        font-size: 22px;
+        line-height: 25px;
+    }
+}
