@@ -79,18 +79,20 @@ ul li a
 
 .search
 {
-    width: 100%;
+    width: 110%;
     position: relative;
     display: flex;
+    padding-left: 85%;   
+    height: 80px;
 }
 
 .searchTerm
 {
-    width: 10%;
-    border: 3px solid #00b4cc;
+   width: 130px;
+    border: 2px solid #ff9900;
     border-right: none;
     padding: 5px;
-    height: 20px;
+    height: 15px;
     border-radius: 5px 0 0 5px;
     outline: none;
     color: #9dbfaf;
@@ -98,14 +100,14 @@ ul li a
 
 .searchTerm:focus
 {
-    color: #00b4cc;
+    color: #ff9900;
 }
 
 .searchButton
 {
-    width: 200px;
-    border: 1px solid #00b4cc;
-    background: #00b4cc;
+    width: 65px;
+    border: 1px solid #ff9900;
+    background: #ff9900;
     text-align: center;
     color: #fff;
     border-radius: 0 5px 5px 0;
