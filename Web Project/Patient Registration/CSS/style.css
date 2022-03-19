@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+html
+{
+    background-color: rgb(184, 178, 178);
+}
+
+body
+{
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+
+.logo
+{
+    color: #ff9900;
+    font-size: 35px;
+    font-family: bold;
+    padding-left: 10px;
+    float: left;
+    padding-top: 15px;
+}
+
+.navbar
+{
+   
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.main
+{
+    width: 100;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+    background-position: center;
+   
+    
+}
+
+.menu
+{
+    width: 200px;
+    float: left;
+    height: 80px;
+}
+
+ul
+{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 400px;
+}
+
+ul li
+{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+   
+}
+
+ul li a
+{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.4 ease-in-out;
+}
+
+.search
+{
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm
+{
+    width: 10%;
+    border: 3px solid #00b4cc;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9dbfaf;
+}
+
+.searchTerm:focus
+{
+    color: #00b4cc;
+}
+
+.searchButton
+{
+    width: 200px;
+    border: 1px solid #00b4cc;
+    background: #00b4cc;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px
+}
