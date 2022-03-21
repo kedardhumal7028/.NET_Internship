@@ -1,47 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patient Registration</title>
 </head>
+
 <body>
     <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css">
-    <title>Clinical Lab</title>
-</head>
+    <head>
+        <title>Patient Registration</title>
+        <link rel="stylesheet" href="./CSS/style.css">
+        <title>Clinical Lab</title>
+    </head>
 
-<body>
-    <section id="Banner">
+    <body>
+
         <div class="main">
             <div class="navbar">
                 <div class="icon">
-                    <h2 class="logo">Clinical Lab</h2>
+                    <h2 class="logo">ClinicalLab</h2>
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a href="#Banner">HOME</a></li>
-                        <li><a href="#Banner2">ABOUT</a></li>
-                        <li><a href="#Banner3">CONTACT</a></li>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">SERVICE</a></li>
+                        <li><a href="#">CONTACT</a></li>
                     </ul>
                 </div>
                 <div class="search">
-                    <input type="text" class="searchTerm" placeholder="Write here.......">
-                    <button type="submit" class="searchButton">
-                        <i class="fa fa-search"></i>
-                    </button>
+                    <input class="srch" type="search" name="" placeholder="Type To text">
+                    <a href="#"> <button class="btn">Search</button></a>
+                </div>
+            </div><br><br>
+            <div class="content">
+                <div class="custome-info">
+                    <fieldset class="set">
+                        <legend class="back">Personal Information</legend>
+                        <br>
+                        <div class="input-box">
+                            <label>First Name : </label>
+                            <input type="text" name="First Name">
+                        </div><br>
+                        <div class="input-box">
+                            <label>Middle Name : </label>
+                            <input type="text" name="Middle Name">
+                        </div><br>
+                        <div class="input-box">
+                            <label>Surname : </label>
+                            <input type="text" name="Surname">
+                        </div><br>
+                        <div class="input-box">
+                            <label>Full Name : </label>
+                            <input type="text" name="Full Name">
+                        </div><br>
+                        <div class="input-box">
+                            <label>Date of Birth : </label>
+                            <input type="date" name="DOB">
+                        </div><br>
+                        <div class="input-box">
+                            <label>Age : </label>
+                            <input type="text" name="Age">
+                        </div><br>
+                        <div class="input-box">
+                            <label>Gender : &ensp; </label>
+                            <input type="radio" name="gender" value="male">&ensp; Male &ensp;
+                            <input type="radio" name="gender" value="female">&ensp; Female &ensp;
+                            <input type="radio" name="gender" value="female">&ensp; Other &ensp;
+                        </div><br>
+                    </fieldset>
+                </div><br><br>
+                <div class="custome-info">
+                    <fieldset class="set">
+                        <legend>Address Details</legend>
+                        <br>
+                        <div class="input-box">
+                            <label>Aadhhar Number : </label>
+                            <input type="text" name="Aadhhar Number">
+                        </div><br>
+                        <div class="input-box">
+                            <label>Address : </label>
+                            <input type="text" name="Address">
+                        </div><br>
+                    </fieldset>
+                </div><br><br>
+                <div class="custome-info">
+                    <fieldset class="set">
+                        <legend>Contact Details</legend>
+                        <br>
+                        <div class="input-box">
+                            <label>Phone Number 1 : </label>&ensp;
+                            <input type="text" name="Phone Number 1">&ensp;&ensp;
+                            <label>Phone Number 2 : </label>
+                            <input type="text" name="Phone Number 2">
+                        </div><br>
+                        <div class="input-box">
+                            <label>Email ID : </label>
+                            <input type="text" name="Email ID">
+                        </div><br>
+                    </fieldset>
+                </div><br><br>
+                <div class="custome-info">
+                    <fieldset class="set">
+                        <legend>Patient Health </legend>
+                        <br>
+                        <div class="input-box">
+                            <label>Allergy : &ensp; </label>
+                            <input type="radio" name="Allergy" value="Yes">&ensp; Yes &ensp;
+                            <input type="radio" name="Allergy" value="No">&ensp; No &ensp;<br><br>
+                            <input type="text" name="Sideeffect">
+                        </div><br>
+                        <div class="input-box">
+                            <label>Sideeffect : </label>
+                            <input type="text" name="Sideeffect">
+                        </div><br>
+                    </fieldset>
+                </div><br><br>
+                <div class="custome-info">
+                    <fieldset class="set">
+                        <legend>Test Name</legend>
+                        <br>
+                        
+                    </fieldset>
                 </div>
             </div>
 
         </div>
-        
-    </section>
-</body>
-</html>
+
+        </section>
+    </body>
+
+    </html>
