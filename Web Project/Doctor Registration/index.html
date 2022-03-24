@@ -2,159 +2,142 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doctor Registration</title>
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 
 <body>
-    <!DOCTYPE html>
-    <html lang="en">
 
-    <head>
-        <title>Doctor Registration</title>
-        <link rel="stylesheet" href="./css/style.css">
-        <title>Clinical Lab</title>
-    </head>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">ClinicalLab</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" placeholder="Type To text Hera">
+                <a href="#"> <button class="btn1">Search</button></a>
+            </div>
+        </div><br>
+    </div>
 
-    <body>
+   
 
-        <div class="main">
-            <div class="navbar">
-                <div class="icon">
-                    <h2 class="logo">ClinicalLab</h2>
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">SERVICE</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                    </ul>
-                </div>
-                <div class="search">
-                    <input class="srch" type="search" placeholder="Type To text Hera">
-                    <a href="#"> <button class="btn">Search</button></a>
-                </div>
-            </div><br><br>
+    <div class="wrapper">
+
+        <div class="headline">
             <h1>Doctor Registration</h1>
-            <br><br><br>
-            <div class="content">
-                <div class="custome-info">
-                    <fieldset class="set1">
-                        <legend class="back">Personal Information</legend>
-                        <br>
-                        <div class="input-box1">
-                            <form>
-                                <label class="lbn"><strong> First Name :</strong> </label>
-                                <input type="text1" name="First Name">
-                                <label class="lbn"> <strong>Middle Name : </strong></label>
-                                <input type="text1" name="Middle Name">
-                                <label class="lbn"><strong> Surname :</strong> </label>
-                                <input type="text1" name="Surname">
-                                <br><br>
-                                <label class="lbn"><strong> Full Name : </strong></label>
-                                <input class="fn" type="text2" name="Full Name"><br><br>
-                                <label class="lbn"> <strong> Date of Birth :</strong></label>
-                                <input type="date" name="DOB">
-                                <label class="lbn"> <strong> Age :</strong> </label>
-                                <input type="text1" name="Age">
-                                <label class="lbn"><strong> Gender :</strong> &ensp; </label>
-                                <input type="radio" name="gender" value="male">&ensp; Male &ensp;
-                                <input type="radio" name="gender" value="female">&ensp; Female &ensp;
-                                <input type="radio" name="gender" value="female">&ensp; Other &ensp;
-                                <br><br>
-                            </form>
-                        </div>
-                    </fieldset>
-                </div><br><br>
-                <div class="custome-info">
-                    <fieldset class="set1">
-                        <legend class="back">Address Details</legend>
-                        <br>
-                        <div class="input-box1">
-                            <form>
-                                <label class="lbn"><strong>Block No:</strong> </label>
-                                <input type="text1" name="Block No">
-                                <label class="lbn"><strong>Village:</strong> </label>
-                                <input type="text1" name="Village">
-                                <label class="lbn"><strong>Post Office:</strong> </label>
-                                <input type="text1" name="Post Office">
-                                <br><br>
-                                <label class="lbn"><strong>Taluka:</strong> </label>
-                                &ensp; &ensp; <input type="text1" name="Taluka">
-                                <label class="lbn"><strong>District:</strong> </label>
-                                <input type="text1" name="District">
-                                <label class="lbn"><strong>State:</strong> </label>
-                                <input type="text1" name="State">
-                                <br><br>
-                                <label class="lbn"><strong>Pincode:</strong> </label>
-                                <input type="text1" name="Pincode">
-                                <label class="lbn"><strong>Country Name:</strong> </label>
-                                <input type="text1" name="Country Name">
-                                <br><br>
-                                <label class="lbn"> <strong>Aadhhar Number : </strong></label>
-                                <input type="text1" name="Aadhhar Number">
-                                <label class="lbn"> <strong>Pancard Number : </strong></label>
-                                <input type="text1" name="Pancard Number">
+        </div>
+        <form class="form" method="post" action="#">
 
-                                <br><br>
-                            </form>
-                        </div>
-                    </fieldset>
-                </div><br><br>
-                <div class="custome-info">
-                    <fieldset class="set1">
-                        <legend class="back">Contact Details</legend>
-                        <br>
-                        <div class="input-box1">
-                            <form>
-                                <label class="lbn"><strong>Mobile Number 1 :</strong> </label>
-                                <input type="text1" name="Mobile Number 1">
-                                <label class="lbn"><strong>Mobile Number 2 :</strong> </label>
-                                <input type="text1" name="Mobile Number 2"><br><br>
-                                <label class="lbn"><strong>Email ID :</strong> </label>
-                                <input type="email" name="Email ID">
-                                <br><br>
+            <div class="form-group">
+                <input type="text" placeholder="Full name" required="" id="fname">
+            </div>
+            <div class="form-group">
+                <input type="number" placeholder="Mobile Number" required="" id="MNumber">
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Email" required="" id="email">
+            </div>
+            <div class="form-group">
+                <input type="date" placeholder="Appointment Date" required="" id="date">
+            </div>
+            <br>
+            <h3> <strong> Address Details </strong></h3>
+            <div class="form-group">
+                <input type="text" placeholder=" Enter Area" required="" id="area">
+                <input type="text" placeholder=" Enter City" required="" id="city">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder=" Enter State" required="" id="state">
+                <input type="text" placeholder=" Enter Pincode" required="" id="Pincode">
+            </div><br>
+            <div class="container">
+                <h3>Upload your File :</h3>
+                <div class="drag-area">
+                    <div class="icon">
+                        <i class="fas fa-images"></i>
+                    </div>
 
-                            </form>
-                        </div>
-                    </fieldset>
-                </div><br><br>
-
-                <!-- file uploded start -->
-
-                <div class="custome-info">
-                    <fieldset class="set1">
-                        <br>
-                        <div class="wrapper">
-                            <header>File Uploader</header>
-                            <form action="#"> <input class="file-input" type="file" name="file" hidden> <i
-                                    class="fas fa-cloud-upload-alt"></i>
-                                <p>Browse File to Upload</p>
-                            </form>
-                            <section class="progress-area"></section>
-                            <section class="uploaded-area"></section>
-                        </div>
-                        
-                    </fieldset>
-                </div><br><br>
-               
-                <div class="save">
-                    <button class="btsave" type="button"> <strong> Save </strong></button>
+                    <span class="header">Drag & Drop</span>
+                    <span class="header">or <span class="button">browse</span></span>
+                    <input type="file" hidden />
+                    <span class="support">Supports: JPEG, JPG, PNG</span>
                 </div>
+            </div>
+            <button type="submit" class="btn" onclick="getdata()">Doctor Registration</button>
 
-            </div><br><br><br><br><br>
-        </div>
+            <div class="paragraph">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos natus earum dignissimos repellat
+                voluptatem maxime ducimus sint officiis. Officia quisquam in rerum, corporis odio labore eaque itaque
+                iure ducimus tempore nihil. Blanditiis delectus et repudiandae qui ratione porro, ipsa dolor! Excepturi
+                delectus illo ad officiis obcaecati quos commodi hic quod est voluptate. Commodi, earum nam unde, maxime
+                tempore adipisci facere ad, perspiciatis quidem omnis expedita! Tempora sed corporis quasi nobis non,
+                reiciendis veniam ex vitae molestiae. Quibusdam iusto non illum maxime saepe alias eligendi sit ratione
+                dolore, deserunt pariatur dignissimos et commodi placeat aut at corporis provident doloribus. Eligendi
+                in voluptas porro voluptatem at, dolorem aspernatur animi, sequi eveniet modi dolorum praesentium
+                consequatur, itaque provident ab? Modi debitis cumque praesentium ad tempore voluptatibus, unde eveniet
+                autem distinctio sit quia quaerat corrupti expedita officia doloremque, quae natus, assumenda quam cum.
+                Vitae libero, excepturi dolorum provident est nam, laboriosam ullam illo delectus, ratione quos alias
+                officiis enim debitis. Cumque soluta nesciunt similique molestiae earum nulla eius est, ullam architecto
+                minus autem molestias odit quae sit quibusdam, distinctio nemo voluptatibus velit exercitationem
+                doloremque dolore asperiores harum voluptates. In ut, aperiam reiciendis aut sunt excepturi repellendus
+                eos odio perspiciatis praesentium fugiat, quae placeat ipsum veritatis veniam, eum magnam velit
+                expedita! Aut reprehenderit quis at culpa mollitia delectus ut, soluta sed tempora, natus laudantium
+                ullam architecto sequi alias quibusdam eos exercitationem ducimus eligendi dolorem facere asperiores.
 
-        </div>
+            </div>
+        </form>
+    </div>
+    <br><br><br><br><br>
+    <div class="foot">
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <br>
+                        <h4>company</h4>
+                        <p><strong>Flipkart </strong> </p>
+                        <p><strong>Amazon </strong> </p>
+                        <p> <strong>Netflix </strong> </p>
+                        <p> <strong>Microsoft </strong> </p>
+                       
+                    </div>
+                    <div class="footer-col">
+                        <br>
+                        <h4>get help</h4>
+                        <p><strong>Flipkart </strong> </p>
+                        <p><strong>Amazon </strong> </p>
+                        <p> <strong>Netflix </strong> </p>
+                        <p> <strong>Microsoft </strong> </p>
+                    </div>
+                    <div class="footer-col">
+                        <br>
+                        <h4>online shop</h4>
+                        <p><strong>Flipkart </strong> </p>
+                        <p><strong>Amazon </strong> </p>
+                        <p> <strong>Netflix </strong> </p>
+                        <p> <strong>Microsoft </strong> </p>
+                    </div>
+                    <div class="footer-col">
+                        <br>
+                        <h4>follow us</h4>
+                        <p><strong>Flipkart </strong> </p>
+                        <p><strong>Amazon </strong> </p>
+                        <p> <strong>Netflix </strong> </p>
+                        <p> <strong>Microsoft </strong> </p>
+                        
+                    </div> 
+                </div>
+            </div>
+        </footer>
+    </div>
 
-        </section>
-        <br><br>
-
-
-
-    </body>
-
-    </html>
+</body>
